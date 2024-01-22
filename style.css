@@ -1,0 +1,109 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body{
+    overflow-x: hidden;
+    
+}
+
+.first_Page{
+    min-height: 100vh;
+    background-image: url(./pexels-diyar-shahbaz-17764453.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+*{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    max-width: 100vw;
+    background-color: rgba(293, 0, 0, .1);
+    position: fixed;
+}
+.leftSide{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(300px);
+    transition: 1s all linear;
+    color: aqua;
+
+}
+.nav-links{
+    height: 100%;
+    margin: auto;
+}
+.main{
+    min-height: 100vh;
+   
+    background-image: url(./pexels-mahmoud-atashi-17104400.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+
+}
+.down{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;   
+}
+.down>svg{
+    font-size: xx-large;
+    /* color: red; */
+    height: 200px;
+    animation: downOk 2s linear infinite ;
+}
+.baska{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.foto{
+    width: inherit;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px green;
+}
+.yazi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    
+}
+.yazi > p {
+    width: 300px;
+    border-radius: 40px;
+    /* border: 1px solid black; */
+    background-color: rgba(120, 120, 230, .5);
+}
+
+.contact{
+    min-height: 50vh;
+    background-image: url(./pexels-zetong-li-18780512.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+@keyframes downOk{
+    0%{
+        transform: translateY(-20px);
+      
+    }
+    100%{
+        transform: translateY(20px);
+       
+    }
+}
