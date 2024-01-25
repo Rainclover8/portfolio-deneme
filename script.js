@@ -46,12 +46,11 @@ let deneme = document.getElementById('nameSurname').value
 let mail = document.getElementById('mail').value
 let tavsiye = document.getElementById('tavsiye').value
 
-let gosterMsg = "Adı Soyadı:" + deneme + "Mail:" + mail + "tavsiye metni: "+ tavsiye + "."
-// `
-// Ad: ${name}
-// mail: ${mail}
-// tavsiye metni: ${tavsiye}
-// `
+let gosterMsg =`
+Adı Soyadı:  ${deneme}
+Mail:  ${mail}
+tavsiye metni:  ${tavsiye}  .`
+
 function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -64,5 +63,5 @@ function sendEmail(){
     }).then(
       message => alert(message)
     );
-    
 }
+
