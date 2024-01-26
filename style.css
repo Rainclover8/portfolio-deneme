@@ -23,6 +23,7 @@ body{
 }
 .navbar{
     background-color: rgba(98, 198, 198, .5);
+    z-index: 2;
 }
 
 .leftSide{
@@ -82,6 +83,12 @@ body{
     width: inherit;
     border-radius: 20px;
     box-shadow: 1px 1px 10px green;
+    animation: foto 1s alternate infinite;
+    z-index: 1;
+
+}
+.baska{
+   min-height: 100px;
 }
 .yazi{
     display: flex;
@@ -149,4 +156,13 @@ body{
         opacity: 1;
         text-shadow: 5px 5px 10px grey;
     }
+}
+@keyframes foto{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+    
 }
