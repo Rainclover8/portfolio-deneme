@@ -73,6 +73,7 @@ body{
     height: 200px;
     animation: downOk 2s linear infinite ;
 }
+
 .baska{
     min-height: 100vh;
     display: flex;
